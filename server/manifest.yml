@@ -1,0 +1,11 @@
+  applications:
+  - name: kirtidjangoapp
+    routes:
+      - route: kirtidjango1234.mybluemix.net
+    memory: 128M
+    buildpack: https://github.com/cloudfoundry/python-buildpack.git
+  - name: kirtidjangoapp-nginx
+    routes:
+      - route: kirtidjango1234.mybluemix.net/static
+    memory: 128M
+    buildpack: staticfile_buildpack
